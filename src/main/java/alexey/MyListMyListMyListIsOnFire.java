@@ -1,14 +1,19 @@
+package alexey;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyListMyListMyListIsOnFire {
 
-  private volatile List<Integer> list;
+	private volatile List<Integer> list;
 
-  void prepareList() {
-     list = new ArrayList();
-     list.add(1);
-     list.add(2);
-  }
+	void prepareList() {
+		list = new ArrayList<>();
+		list.add(1);
+		list.add(2);
+	}
 
-  List<Integer> getMyList() {
-     return list;
-  }
+	List<Integer> getMyList() {
+		return list;
+	}
 }
